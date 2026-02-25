@@ -6,6 +6,7 @@ import { Hero } from './components/Hero';
 import { LinkButton } from './components/LinkButton';
 import { Footer } from './components/Footer';
 import { Phone, Instagram, Calendar } from 'lucide-react';
+import logo from './monera-logo.jpg';
 
 const App: React.FC = () => {
   // Default to Persian (fa)
@@ -36,12 +37,12 @@ const App: React.FC = () => {
         </div>
 
         {/* Hero Section */}
-        <Hero 
-          lang={lang}
-          name={t.name}
-          title={t.title}
-          imageUrl="/monera-logo.jpg" // Assumes the user saves their logo as monera-logo.jpg in the public/root folder
-        />
+       <Hero 
+  lang={lang}
+  name={t.name}
+  title={t.title}
+  imageUrl={logo}
+/>
 
         {/* Primary Actions Stack */}
         <main className="w-full flex flex-col gap-4 animate-slide-up" style={{ animationDelay: '0.2s' }}>
