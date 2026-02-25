@@ -19,7 +19,7 @@ export const Hero: React.FC<HeroProps> = ({ name, title, imageUrl, lang }) => {
           <img 
             src={imageUrl} 
             alt={name} 
-            className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale hover:grayscale-0"
+            className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
           />
         </div>
       </div>
@@ -31,7 +31,6 @@ export const Hero: React.FC<HeroProps> = ({ name, title, imageUrl, lang }) => {
         <p className={`text-sm md:text-base font-medium text-stone-500 max-w-xs ${isPersian ? 'font-persian' : 'font-sans'}`}>
           {title}
         </p>
-        <span className="text-[10px] uppercase tracking-[0.2em] text-neutral-400 font-medium mt-2">Tehran</span>
       </div>
 
       <div className="w-12 h-0.5 bg-stone-300 rounded-full my-4" />
