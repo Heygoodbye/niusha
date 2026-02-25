@@ -8,11 +8,11 @@ interface LanguageSwitchProps {
 
 export const LanguageSwitch: React.FC<LanguageSwitchProps> = ({ currentLang, onToggle }) => {
   return (
-    <div className="relative flex items-center bg-stone-200/50 backdrop-blur-sm p-1 rounded-full w-24 h-10 shadow-inner">
+    <div className="relative flex items-center bg-stone-200/50 backdrop-blur-sm p-1 rounded-full w-24 h-10 shadow-inner" dir="ltr">
       {/* Sliding Background */}
       <div
-        className={`absolute top-1 bottom-1 w-[calc(50%-4px)] bg-white rounded-full shadow-sm transition-all duration-300 ease-out transform ${
-          currentLang === 'fa' ? 'translate-x-[calc(0%+2px)]' : 'translate-x-[calc(100%+8px)]'
+        className={`absolute top-1 bottom-1 left-1 w-[calc(50%-4px)] bg-white rounded-full shadow-sm transition-all duration-300 ease-out transform ${
+          currentLang === 'en' ? 'translate-x-full' : 'translate-x-0'
         }`}
       />
       

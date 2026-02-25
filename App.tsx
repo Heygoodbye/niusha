@@ -40,7 +40,7 @@ const App: React.FC = () => {
           lang={lang}
           name={t.name}
           title={t.title}
-          imageUrl="./niousha.jpg" // Assumes the user saves their photo as niousha.jpg in the public/root folder
+          imageUrl="./monera-logo.jpg" // Assumes the user saves their logo as monera-logo.jpg in the public/root folder
         />
 
         {/* Primary Actions Stack */}
