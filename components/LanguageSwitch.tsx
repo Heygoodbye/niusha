@@ -12,19 +12,11 @@ export const LanguageSwitch: React.FC<LanguageSwitchProps> = ({ currentLang, onT
       {/* Sliding Background */}
       <div
         className={`absolute top-1 bottom-1 left-1 w-[calc(50%-4px)] bg-white rounded-full shadow-sm transition-all duration-300 ease-out transform ${
-          currentLang === 'en' ? 'translate-x-full' : 'translate-x-0'
+          currentLang === 'fa' ? 'translate-x-full' : 'translate-x-0'
         }`}
       />
       
       {/* Buttons */}
-      <button
-        onClick={() => onToggle('fa')}
-        className={`flex-1 relative z-10 text-sm font-medium transition-colors duration-200 font-persian ${
-          currentLang === 'fa' ? 'text-stone-800' : 'text-stone-400 hover:text-stone-600'
-        }`}
-      >
-        فارسی
-      </button>
       <button
         onClick={() => onToggle('en')}
         className={`flex-1 relative z-10 text-xs font-medium tracking-wide transition-colors duration-200 font-sans ${
@@ -32,6 +24,14 @@ export const LanguageSwitch: React.FC<LanguageSwitchProps> = ({ currentLang, onT
         }`}
       >
         EN
+      </button>
+      <button
+        onClick={() => onToggle('fa')}
+        className={`flex-1 relative z-10 text-sm font-medium transition-colors duration-200 font-persian ${
+          currentLang === 'fa' ? 'text-stone-800' : 'text-stone-400 hover:text-stone-600'
+        }`}
+      >
+        فارسی
       </button>
     </div>
   );
