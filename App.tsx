@@ -52,7 +52,7 @@ const App: React.FC = () => {
       <div className="z-10 w-full max-w-md px-6 py-8 md:py-12 flex flex-col items-center gap-8 min-h-screen">
         
         {/* Top Bar - Stable, no transition */}
-        <div className="w-full flex justify-end">
+       <div className="w-full flex justify-end" dir="ltr">
           <LanguageSwitch currentLang={lang} onToggle={handleLanguageToggle} />
         </div>
 
