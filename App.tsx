@@ -6,8 +6,7 @@ import { Hero } from './components/Hero';
 import { LinkButton } from './components/LinkButton';
 import { Footer } from './components/Footer';
 import { Phone, Instagram, Calendar } from 'lucide-react';
-// @ts-ignore
-import logoUrl from './monera-logo.jpg';
+import logo from './monera-logo.jpg';
 
 const App: React.FC = () => {
   // Default to Persian (fa)
@@ -60,12 +59,12 @@ const App: React.FC = () => {
         {/* Main Content - Smooth Transition */}
         <div className={`w-full flex flex-col items-center gap-8 flex-grow transition-all duration-300 ease-in-out ${isTransitioning ? 'opacity-50 blur-sm' : 'opacity-100 blur-0'}`}>
           {/* Hero Section */}
-          <Hero 
-            lang={lang}
-            name={t.name}
-            title={t.title}
-            imageUrl={logoUrl} 
-          />
+<Hero 
+  lang={lang}
+  name={t.name}
+  title={t.title}
+  imageUrl={logo}
+/>
 
           {/* Primary Actions Stack */}
           <main className="w-full flex flex-col gap-4 animate-slide-up" style={{ animationDelay: '0.2s' }}>
