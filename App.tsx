@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import { translations } from './constants';
 import { Language } from './types';
 import { LanguageSwitch } from './components/LanguageSwitch';
@@ -102,6 +103,7 @@ const App: React.FC = () => {
           <Footer lang={lang} copyright={t.copyright} />
         </div>
       </div>
+      <SpeedInsights />
     </div>
   );
 };
